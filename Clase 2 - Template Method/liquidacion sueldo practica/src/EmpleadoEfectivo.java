@@ -35,14 +35,14 @@ public class EmpleadoEfectivo extends Empleado{
 
     @Override
     protected double calcularSueldo() {
-        return sueldoBasico + descuentos + premios;
+        return sueldoBasico - descuentos + premios;
     }
 
     @Override
-    protected void impresion() {
+    protected String impresion() {
         if (calcularSueldo()>0){
-        System.out.println("La liquidación generada es un documento impreso."); }
+        return "digital"; }
     else {
-        System.out.println("La liquidación no pudo ser calculada");}
+        return "La liquidación no pudo ser calculada";}
     }
 }

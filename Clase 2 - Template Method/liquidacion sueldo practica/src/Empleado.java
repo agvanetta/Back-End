@@ -4,11 +4,15 @@ public abstract class Empleado {
     private int legajo;
     private int cuentaBancaria;
 
-    public void liquidarSueldo(){
-    calcularSueldo();
-    impresion();
-    deposito();
-    if (calcularSueldo()>0)System.out.println("Saldo a liquidar " + calcularSueldo());
+    public String liquidarSueldo() {
+        calcularSueldo();
+        impresion();
+        deposito();
+        if (calcularSueldo() > 0) {
+            return "La liquidación generada es un documento "+impresion()+". Saldo a liquidar: " + calcularSueldo();
+        } else {
+            return "La liquidación no pudo ser calculada.";
+        }
     }
 
     public Empleado(String nombreCompleto, int legajo, int cuentaBancaria) {
@@ -42,7 +46,7 @@ public abstract class Empleado {
     }
 
     protected abstract double calcularSueldo();
-    protected abstract void impresion();
+    protected abstract String impresion();
 
     public boolean deposito(){
         if(calcularSueldo()>0){

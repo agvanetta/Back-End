@@ -30,11 +30,11 @@ public class EmpleadoContratado extends Empleado{
     }
 
     @Override
-    protected void impresion() {
+    protected String impresion() {
         if (calcularSueldo()>0){
-            System.out.println("La liquidación generada es un documento digital."); }
+            return  "La liquidación generada es un documento digital."; }
         else {
-            System.out.println("La liquidación no pudo ser calculada");}
+            return  "La liquidación no pudo ser calculada";}
     }
 }
 
