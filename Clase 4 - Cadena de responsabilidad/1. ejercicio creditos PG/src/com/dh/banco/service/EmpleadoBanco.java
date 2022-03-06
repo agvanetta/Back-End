@@ -2,7 +2,7 @@ package com.dh.banco.service;
 
 public abstract class EmpleadoBanco {
 
-    protected EmpleadoBanco sigEmpleadoBanco;
+    protected EmpleadoBanco sigEmpleadoBanco; // o private
 
     public abstract void procesarSolicitud(Integer monto);
 
