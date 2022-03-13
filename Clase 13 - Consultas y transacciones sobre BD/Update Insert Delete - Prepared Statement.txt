@@ -1,0 +1,37 @@
+Update: 
+	String query = ("UPDATE PERSONAS SET NOMBRE=? WHERE APELLIDO=?”);
+	try (PreparedStatement pstmt = con.prepareStatement(query)) {
+
+	pstmt.setString(1, Mariano");
+	pstmt.setString(2, "Martinez");
+	pstmt.executeUpdate();
+
+	}
+	catch (SQLException ex) {
+
+	}
+
+Insert: 
+	String query = ("INSERT INTO PERSONAS (NOMBRE, APELLIDO) VALUES (?,?));
+	try (PreparedStatement pstmt = con.prepareStatement(query)) {
+
+	pstmt.setString(1, Mariano");
+	pstmt.setString(2, "Martinez");
+	pstmt.executeUpdate();
+
+	}
+	catch (SQLException ex) {
+
+	}
+
+Delete: 
+	String query = ("DELETE FROM PERSONAS WHERE APELLIDO=?);
+	try (PreparedStatement pstmt = con.prepareStatement(query)) {
+
+	pstmt.setString(1, Mariano");
+	pstmt.executeUpdate();
+
+	}
+	catch (SQLException ex) {
+
+	}

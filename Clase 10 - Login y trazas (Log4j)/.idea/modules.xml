@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Clase 10 - Login y trazas (Log4j).iml" filepath="$PROJECT_DIR$/Clase 10 - Login y trazas (Log4j).iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Clase 10 - Login y trazas (Log4j).iml" filepath="$PROJECT_DIR$/.idea/Clase 10 - Login y trazas (Log4j).iml" />
     </modules>
   </component>
 </project>

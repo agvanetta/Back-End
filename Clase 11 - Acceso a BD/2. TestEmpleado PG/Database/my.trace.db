@@ -1,0 +1,276 @@
+2022-03-09 22:35:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Tipo de dato desconocido : "VARCAR"
+Unknown data type: "VARCAR"; SQL statement:
+CREATE TABLE TEST(ID INT PRIMARY KEY, NOMBRE VARCHAR(255), EDAD INT, EMPRESA VARCAR(255), FECHA_INGRESO VARCHAR(255))
+INSERT INTO TEST VALUES(1, 22);
+INSERT INTO TEST VALUES(2, Pupino);
+INSERT INTO TEST VALUES(3, 3);
+INSERT INTO TEST VALUES(4, Digital House);
+INSERT INTO TEST VALUES(5, 06-06-1993);
+ [50004-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.command.Parser.readIfDataType1(Parser.java:6234)
+	at org.h2.command.Parser.readIfDataType(Parser.java:6075)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:6057)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5932)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:9360)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:9298)
+	at org.h2.command.Parser.parseCreate(Parser.java:6779)
+	at org.h2.command.Parser.parsePrepared(Parser.java:746)
+	at org.h2.command.Parser.parse(Parser.java:674)
+	at org.h2.command.Parser.parse(Parser.java:644)
+	at org.h2.command.Parser.prepareCommand(Parser.java:551)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:615)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:53)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at Test.main(Test.java:25)
+2022-03-09 22:36:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE TEST(ID INT PRIMARY KEY, NOMBRE VARCHAR(255), EDAD INT, EMPRESA VARCHAR(255), FECHA_INGRESO VARCHAR(255))\000a[*]INSERT INTO TEST VALUES(1, 22);\000aINSERT INTO TEST VALUES(2, Pupino);\000aINSERT INTO TEST VALUES(3, 3);\000aINSERT INTO TEST VALUES(4, Digital House);\000aINSERT INTO TEST VALUES(5, 06-06-1993);\000a"
+Syntax error in SQL statement "CREATE TABLE TEST(ID INT PRIMARY KEY, NOMBRE VARCHAR(255), EDAD INT, EMPRESA VARCHAR(255), FECHA_INGRESO VARCHAR(255))\000a[*]INSERT INTO TEST VALUES(1, 22);\000aINSERT INTO TEST VALUES(2, Pupino);\000aINSERT INTO TEST VALUES(3, 3);\000aINSERT INTO TEST VALUES(4, Digital House);\000aINSERT INTO TEST VALUES(5, 06-06-1993);\000a"; SQL statement:
+CREATE TABLE TEST(ID INT PRIMARY KEY, NOMBRE VARCHAR(255), EDAD INT, EMPRESA VARCHAR(255), FECHA_INGRESO VARCHAR(255))
+INSERT INTO TEST VALUES(1, 22);
+INSERT INTO TEST VALUES(2, Pupino);
+INSERT INTO TEST VALUES(3, 3);
+INSERT INTO TEST VALUES(4, Digital House);
+INSERT INTO TEST VALUES(5, 06-06-1993);
+ [42000-210]
+2022-03-09 22:39:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE TEST(ID INT PRIMARY KEY, NOMBRE VARCHAR(255), EDAD INT[*](50), EMPRESA VARCHAR(255), FECHA_INGRESO VARCHAR(255))\000aINSERT INTO TEST VALUES(1, 22);\000aINSERT INTO TEST VALUES(2, Pupino);\000aINSERT INTO TEST VALUES(3, 3);\000aINSERT INTO TEST VALUES(4, Digital House);\000aINSERT INTO TEST VALUES(5, 06-06-1993);\000a"; se esperaba "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"
+Syntax error in SQL statement "CREATE TABLE TEST(ID INT PRIMARY KEY, NOMBRE VARCHAR(255), EDAD INT[*](50), EMPRESA VARCHAR(255), FECHA_INGRESO VARCHAR(255))\000aINSERT INTO TEST VALUES(1, 22);\000aINSERT INTO TEST VALUES(2, Pupino);\000aINSERT INTO TEST VALUES(3, 3);\000aINSERT INTO TEST VALUES(4, Digital House);\000aINSERT INTO TEST VALUES(5, 06-06-1993);\000a"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE TEST(ID INT PRIMARY KEY, NOMBRE VARCHAR(255), EDAD INT(50), EMPRESA VARCHAR(255), FECHA_INGRESO VARCHAR(255))
+INSERT INTO TEST VALUES(1, 22);
+INSERT INTO TEST VALUES(2, Pupino);
+INSERT INTO TEST VALUES(3, 3);
+INSERT INTO TEST VALUES(4, Digital House);
+INSERT INTO TEST VALUES(5, 06-06-1993);
+ [42001-210]
+2022-03-09 22:40:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE TEST(ID INT PRIMARY KEY, NOMBRE VARCHAR(255), EDAD INT, EMPRESA VARCHAR(255), FECHA_INGRESO VARCHAR(255))\000a[*]INSERT INTO TEST VALUES(1, 22);\000aINSERT INTO TEST VALUES(2, Pupino);\000aINSERT INTO TEST VALUES(3, 3);\000aINSERT INTO TEST VALUES(4, Digital House);\000aINSERT INTO TEST VALUES(5, 06-06-1993);\000a"
+Syntax error in SQL statement "CREATE TABLE TEST(ID INT PRIMARY KEY, NOMBRE VARCHAR(255), EDAD INT, EMPRESA VARCHAR(255), FECHA_INGRESO VARCHAR(255))\000a[*]INSERT INTO TEST VALUES(1, 22);\000aINSERT INTO TEST VALUES(2, Pupino);\000aINSERT INTO TEST VALUES(3, 3);\000aINSERT INTO TEST VALUES(4, Digital House);\000aINSERT INTO TEST VALUES(5, 06-06-1993);\000a"; SQL statement:
+CREATE TABLE TEST(ID INT PRIMARY KEY, NOMBRE VARCHAR(255), EDAD INT, EMPRESA VARCHAR(255), FECHA_INGRESO VARCHAR(255))
+INSERT INTO TEST VALUES(1, 22);
+INSERT INTO TEST VALUES(2, Pupino);
+INSERT INTO TEST VALUES(3, 3);
+INSERT INTO TEST VALUES(4, Digital House);
+INSERT INTO TEST VALUES(5, 06-06-1993);
+ [42000-210]
+2022-03-09 22:44:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "PUPINO" no encontrada
+Column "PUPINO" not found; SQL statement:
+INSERT INTO TEST VALUES(1, Pupino, 3);
+INSERT INTO TEST VALUES(2, 'World', 4);
+ [42122-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:521)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:248)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:230)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.command.dml.Insert.prepare(Insert.java:300)
+	at org.h2.command.Parser.prepareCommand(Parser.java:557)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:615)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:53)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:58)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at Test.main(Test.java:30)
+2022-03-09 22:45:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE TEST(ID INT PRIMARY KEY, NOMBRE VARCHAR(255), EDAD INT, EMPRESA VARCHAR(255), FECHA_INGRESO VARCHAR(255))\000a[*]INSERT INTO TEST VALUES(1, '22');\000aINSERT INTO TEST VALUES(2, 'Pupino');\000aINSERT INTO TEST VALUES(3, '3');\000aINSERT INTO TEST VALUES(4, 'Digital House');\000aINSERT INTO TEST VALUES(5, '06-06-1993');\000a"
+Syntax error in SQL statement "CREATE TABLE TEST(ID INT PRIMARY KEY, NOMBRE VARCHAR(255), EDAD INT, EMPRESA VARCHAR(255), FECHA_INGRESO VARCHAR(255))\000a[*]INSERT INTO TEST VALUES(1, '22');\000aINSERT INTO TEST VALUES(2, 'Pupino');\000aINSERT INTO TEST VALUES(3, '3');\000aINSERT INTO TEST VALUES(4, 'Digital House');\000aINSERT INTO TEST VALUES(5, '06-06-1993');\000a"; SQL statement:
+CREATE TABLE TEST(ID INT PRIMARY KEY, NOMBRE VARCHAR(255), EDAD INT, EMPRESA VARCHAR(255), FECHA_INGRESO VARCHAR(255))
+INSERT INTO TEST VALUES(1, '22');
+INSERT INTO TEST VALUES(2, 'Pupino');
+INSERT INTO TEST VALUES(3, '3');
+INSERT INTO TEST VALUES(4, 'Digital House');
+INSERT INTO TEST VALUES(5, '06-06-1993');
+ [42000-210]
+2022-03-09 22:46:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE TEST(ID INT PRIMARY KEY, NOMBRE VARCHAR(255), EDAD INT, EMPRESA VARCHAR(255), FECHA_INGRESO VARCHAR(255))\000a[*]INSERT INTO TEST VALUES(1, '22');\000a"
+Syntax error in SQL statement "CREATE TABLE TEST(ID INT PRIMARY KEY, NOMBRE VARCHAR(255), EDAD INT, EMPRESA VARCHAR(255), FECHA_INGRESO VARCHAR(255))\000a[*]INSERT INTO TEST VALUES(1, '22');\000a"; SQL statement:
+CREATE TABLE TEST(ID INT PRIMARY KEY, NOMBRE VARCHAR(255), EDAD INT, EMPRESA VARCHAR(255), FECHA_INGRESO VARCHAR(255))
+INSERT INTO TEST VALUES(1, '22');
+ [42000-210]
+2022-03-09 22:46:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE TEST(ID INT PRIMARY KEY, NOMBRE VARCHAR(255), EDAD INT, EMPRESA VARCHAR(255), FECHAINGRESO VARCHAR(255))\000a[*]INSERT INTO TEST VALUES(1, '22');\000a"
+Syntax error in SQL statement "CREATE TABLE TEST(ID INT PRIMARY KEY, NOMBRE VARCHAR(255), EDAD INT, EMPRESA VARCHAR(255), FECHAINGRESO VARCHAR(255))\000a[*]INSERT INTO TEST VALUES(1, '22');\000a"; SQL statement:
+CREATE TABLE TEST(ID INT PRIMARY KEY, NOMBRE VARCHAR(255), EDAD INT, EMPRESA VARCHAR(255), FECHAINGRESO VARCHAR(255))
+INSERT INTO TEST VALUES(1, '22');
+ [42000-210]
+2022-03-09 22:47:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO TEST VALUES(1, 'Hello', 3);
+INSERT INTO TEST VALUES(2, 'World', 4);
+ [21002-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:521)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.message.DbException.get(DbException.java:192)
+	at org.h2.command.dml.Insert.prepare(Insert.java:295)
+	at org.h2.command.Parser.prepareCommand(Parser.java:557)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:615)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:53)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:58)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at Test.main(Test.java:22)
+2022-03-09 22:49:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Tipo de dato desconocido : "ARCHAR"
+Unknown data type: "ARCHAR"; SQL statement:
+CREATE TABLE TEST(ID INT PRIMARY KEY, NAME VARCHAR(255), EDAD INT, EMPRESA VARCHAR(255), FECHA_INGRESO ARCHAR(255));
+INSERT INTO TEST VALUES(22, 'Hello', 3, 'DH');
+INSERT INTO TEST VALUES(2, 'World', 4, 'DL');
+ [50004-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.command.Parser.readIfDataType1(Parser.java:6234)
+	at org.h2.command.Parser.readIfDataType(Parser.java:6075)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:6057)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5932)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:9360)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:9298)
+	at org.h2.command.Parser.parseCreate(Parser.java:6779)
+	at org.h2.command.Parser.parsePrepared(Parser.java:746)
+	at org.h2.command.Parser.parse(Parser.java:674)
+	at org.h2.command.Parser.parse(Parser.java:644)
+	at org.h2.command.Parser.prepareCommand(Parser.java:551)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:615)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:53)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at Test.main(Test.java:22)
+2022-03-09 22:49:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO TEST VALUES(22, 'Hello', 3, 'DH');
+INSERT INTO TEST VALUES(2, 'World', 4, 'DL');
+ [21002-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:521)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.message.DbException.get(DbException.java:192)
+	at org.h2.command.dml.Insert.prepare(Insert.java:295)
+	at org.h2.command.Parser.prepareCommand(Parser.java:557)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:615)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:53)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:58)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at Test.main(Test.java:22)
+2022-03-09 22:49:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO TEST VALUES(1, 'Hello', 3, 'DH');
+INSERT INTO TEST VALUES(2, 'World', 4, 'DL');
+ [21002-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:521)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.message.DbException.get(DbException.java:192)
+	at org.h2.command.dml.Insert.prepare(Insert.java:295)
+	at org.h2.command.Parser.prepareCommand(Parser.java:557)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:615)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:53)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:58)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at Test.main(Test.java:22)
+2022-03-09 22:50:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO TEST VALUES(1, 'Hello', 3, 'DH', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(2, 'World', 4, 'DL', '06-06-1993');\000a"
+Syntax error in SQL statement "INSERT INTO TEST VALUES(1, 'Hello', 3, 'DH', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(2, 'World', 4, 'DL', '06-06-1993');\000a"; SQL statement:
+INSERT INTO TEST VALUES(1, 'Hello', 3, 'DH', '06-06-1993')
+INSERT INTO TEST VALUES(2, 'World', 4, 'DL', '06-06-1993');
+ [42000-210]
+2022-03-09 22:51:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO TEST VALUES('1', 'Hello', 3, 'DH', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(2, 'World', 4, 'DL', '06-06-1993');\000a"
+Syntax error in SQL statement "INSERT INTO TEST VALUES('1', 'Hello', 3, 'DH', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(2, 'World', 4, 'DL', '06-06-1993');\000a"; SQL statement:
+INSERT INTO TEST VALUES('1', 'Hello', 3, 'DH', '06-06-1993')
+INSERT INTO TEST VALUES(2, 'World', 4, 'DL', '06-06-1993');
+ [42000-210]
+2022-03-09 22:52:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO TEST VALUES(1, 'Hello', 3, 'DH', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(2, 'World', 4, 'DL', '06-06-1993');\000a"
+Syntax error in SQL statement "INSERT INTO TEST VALUES(1, 'Hello', 3, 'DH', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(2, 'World', 4, 'DL', '06-06-1993');\000a"; SQL statement:
+INSERT INTO TEST VALUES(1, 'Hello', 3, 'DH', '06-06-1993')
+INSERT INTO TEST VALUES(2, 'World', 4, 'DL', '06-06-1993');
+ [42000-210]
+2022-03-09 22:52:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO TEST VALUES(1, 'Hello', 3, 'DH', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(2, 'World', 4, 'DL', '06-06-1993');\000a"
+Syntax error in SQL statement "INSERT INTO TEST VALUES(1, 'Hello', 3, 'DH', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(2, 'World', 4, 'DL', '06-06-1993');\000a"; SQL statement:
+INSERT INTO TEST VALUES(1, 'Hello', 3, 'DH', '06-06-1993')
+INSERT INTO TEST VALUES(2, 'World', 4, 'DL', '06-06-1993');
+ [42000-210]
+2022-03-09 22:53:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO TEST VALUES(1, 'Hello', 3, 'DH', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(2, 'World', 4, 'DL', '06-06-1993')\000a"
+Syntax error in SQL statement "INSERT INTO TEST VALUES(1, 'Hello', 3, 'DH', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(2, 'World', 4, 'DL', '06-06-1993')\000a"; SQL statement:
+INSERT INTO TEST VALUES(1, 'Hello', 3, 'DH', '06-06-1993')
+INSERT INTO TEST VALUES(2, 'World', 4, 'DL', '06-06-1993')
+ [42000-210]
+2022-03-09 23:00:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO TEST VALUES(1, 'Agustin', 3, 'Digital House', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(2, 'Vanetta', 3, 'Google', '18-02-1993')\000aINSERT INTO TEST VALUES(3, 'Ag_Vanetta', 3, 'Facebook', '01-04-1993')\000a"
+Syntax error in SQL statement "INSERT INTO TEST VALUES(1, 'Agustin', 3, 'Digital House', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(2, 'Vanetta', 3, 'Google', '18-02-1993')\000aINSERT INTO TEST VALUES(3, 'Ag_Vanetta', 3, 'Facebook', '01-04-1993')\000a"; SQL statement:
+INSERT INTO TEST VALUES(1, 'Agustin', 3, 'Digital House', '06-06-1993')
+INSERT INTO TEST VALUES(2, 'Vanetta', 3, 'Google', '18-02-1993')
+INSERT INTO TEST VALUES(3, 'Ag_Vanetta', 3, 'Facebook', '01-04-1993')
+ [42000-210]
+2022-03-09 23:01:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO TEST VALUES(1, 'Agustin', 3, 'Digital House', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(2, 'Vanetta', 3, 'Google', '18-02-1993')\000a"
+Syntax error in SQL statement "INSERT INTO TEST VALUES(1, 'Agustin', 3, 'Digital House', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(2, 'Vanetta', 3, 'Google', '18-02-1993')\000a"; SQL statement:
+INSERT INTO TEST VALUES(1, 'Agustin', 3, 'Digital House', '06-06-1993')
+INSERT INTO TEST VALUES(2, 'Vanetta', 3, 'Google', '18-02-1993')
+ [42000-210]
+2022-03-09 23:05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO TEST VALUES(1, 'Agustin', 3, 'Digital House', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(2, 'Vanetta', 3, 'Google', '18-02-1993')\000a"
+Syntax error in SQL statement "INSERT INTO TEST VALUES(1, 'Agustin', 3, 'Digital House', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(2, 'Vanetta', 3, 'Google', '18-02-1993')\000a"; SQL statement:
+INSERT INTO TEST VALUES(1, 'Agustin', 3, 'Digital House', '06-06-1993')
+INSERT INTO TEST VALUES(2, 'Vanetta', 3, 'Google', '18-02-1993')
+ [42000-210]
+2022-03-09 23:05:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO TEST VALUES(1, 'Agustin', 3, 'Digital House', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(2, 'Vanetta', 3, 'Google', '18-02-1993')\000a"
+Syntax error in SQL statement "INSERT INTO TEST VALUES(1, 'Agustin', 3, 'Digital House', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(2, 'Vanetta', 3, 'Google', '18-02-1993')\000a"; SQL statement:
+INSERT INTO TEST VALUES(1, 'Agustin', 3, 'Digital House', '06-06-1993')
+INSERT INTO TEST VALUES(2, 'Vanetta', 3, 'Google', '18-02-1993')
+ [42000-210]
+2022-03-09 23:06:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO TEST VALUES(1, 'Agustin', 3, 'Digital House', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(2, 'Vanetta', 3, 'Google', '18-02-1993')\000a"
+Syntax error in SQL statement "INSERT INTO TEST VALUES(1, 'Agustin', 3, 'Digital House', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(2, 'Vanetta', 3, 'Google', '18-02-1993')\000a"; SQL statement:
+INSERT INTO TEST VALUES(1, 'Agustin', 3, 'Digital House', '06-06-1993')
+INSERT INTO TEST VALUES(2, 'Vanetta', 3, 'Google', '18-02-1993')
+ [42000-210]
+2022-03-09 23:08:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO TEST VALUES(1, 'Agustin', 3, 'Digital House', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(22, 'Vanetta', 3, 'Google', '18-02-1993')\000a"
+Syntax error in SQL statement "INSERT INTO TEST VALUES(1, 'Agustin', 3, 'Digital House', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(22, 'Vanetta', 3, 'Google', '18-02-1993')\000a"; SQL statement:
+INSERT INTO TEST VALUES(1, 'Agustin', 3, 'Digital House', '06-06-1993')
+INSERT INTO TEST VALUES(22, 'Vanetta', 3, 'Google', '18-02-1993')
+ [42000-210]
+2022-03-09 23:08:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO TEST VALUES(1, 'Agustin', 3, 'Digital House', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(2, 'Vanetta', 3, 'Google', '18-02-1993')\000a"
+Syntax error in SQL statement "INSERT INTO TEST VALUES(1, 'Agustin', 3, 'Digital House', '06-06-1993')\000a[*]INSERT INTO TEST VALUES(2, 'Vanetta', 3, 'Google', '18-02-1993')\000a"; SQL statement:
+INSERT INTO TEST VALUES(1, 'Agustin', 3, 'Digital House', '06-06-1993')
+INSERT INTO TEST VALUES(2, 'Vanetta', 3, 'Google', '18-02-1993')
+ [42000-210]
