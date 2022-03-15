@@ -33,3 +33,6 @@ public class Main {
         System.out.println(cuentaV2.getSaldo() + " Listo");
     }
 }
+
+
+// Tipos parametricos, permiten cambiar en tiempo de ejecucion
