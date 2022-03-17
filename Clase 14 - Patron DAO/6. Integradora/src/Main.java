@@ -32,9 +32,8 @@ public class Main {
 
         //pacienteService2.getDomicilioInterfaceDAO().buscar(1L);
 
+        List<Paciente> pacientes = pacienteService.buscarTodos();
+        System.out.println(pacientes);
         pacienteService.buscarTodos();
-
-
-
     }
 }
