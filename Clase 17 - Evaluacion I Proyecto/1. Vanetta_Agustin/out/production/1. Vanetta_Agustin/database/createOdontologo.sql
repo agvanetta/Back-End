@@ -1,1 +1,0 @@
-create table IF NOT EXISTS odontologos(id int primary key, numero_matricula int, nombre varchar(100), apellido varchar(100))

@@ -19,8 +19,6 @@ public class PacienteDaoH2 implements IDao<Paciente>  {
 
     private DomicilioDaoH2 domicilioDaoH2 = new DomicilioDaoH2();
 
-
-
     @Override
     public Paciente guardar(Paciente paciente) {
 

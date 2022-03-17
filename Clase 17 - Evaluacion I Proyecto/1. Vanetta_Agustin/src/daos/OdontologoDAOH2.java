@@ -10,7 +10,7 @@ import java.util.List;
 public class OdontologoDAOH2 implements InterfaceDAO<Odontologo>{
 
     private final static String DB_JDBC_DRIVER = "org.h2.Driver";
-    private final static String DB_URL = "jdbc:h2:~/db_odontologos";
+    private final static String DB_URL = "jdbc:h2:~/db_domicilios;INIT=RUNSCRIPT FROM 'create.sql'";
     private final static String DB_USER = "sa";
     private final static String DB_PASSWORD = "";
 

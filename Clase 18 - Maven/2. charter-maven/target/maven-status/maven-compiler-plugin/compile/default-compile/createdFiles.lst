@@ -1,0 +1,5 @@
+com\dh\charter\dao\IDao.class
+com\dh\charter\service\AvionService.class
+com\dh\charter\model\Avion.class
+com\dh\charter\dao\impl\AvionDaoH2.class
+com\dh\charter\util\Util.class
