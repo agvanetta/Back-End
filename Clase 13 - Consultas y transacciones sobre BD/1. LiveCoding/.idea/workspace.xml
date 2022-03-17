@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67f31d07-d404-410c-9347-2db686ea0113" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase 18 - Maven/1. repaso_maven/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase 18 - Maven/1. repaso_maven/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase 18 - Maven/1. repaso_maven/src/main/java/org/example/dao/IDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase 18 - Maven/1. repaso_maven/src/main/java/org/example/dao/impl/EstudianteDaoEnMemoria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase 18 - Maven/1. repaso_maven/src/main/java/org/example/dao/impl/EstudianteDaoH2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase 18 - Maven/1. repaso_maven/src/main/java/org/example/model/Estudiante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase 18 - Maven/1. repaso_maven/src/main/java/org/example/service/EstudianteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase 18 - Maven/1. repaso_maven/src/test/java/org/example/EstudianteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Clase 14 - Patron DAO/6. Integradora/out/production/6. Integradora/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Clase 14 - Patron DAO/6. Integradora/out/production/6. Integradora/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Clase 14 - Patron DAO/6. Integradora/out/production/6. Integradora/daos/DomicilioDAOH2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Clase 14 - Patron DAO/6. Integradora/out/production/6. Integradora/daos/DomicilioDAOH2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Clase 14 - Patron DAO/6. Integradora/out/production/6. Integradora/daos/PacienteDAOH2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Clase 14 - Patron DAO/6. Integradora/out/production/6. Integradora/daos/PacienteDAOH2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Clase 14 - Patron DAO/6. Integradora/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Clase 14 - Patron DAO/6. Integradora/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Clase 14 - Patron DAO/6. Integradora/src/daos/DomicilioDAOH2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Clase 14 - Patron DAO/6. Integradora/src/daos/DomicilioDAOH2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Clase 14 - Patron DAO/6. Integradora/src/daos/PacienteDAOH2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Clase 14 - Patron DAO/6. Integradora/src/daos/PacienteDAOH2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +46,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../3. Pacientes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../2. Ej pg - Odontologos" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f808093b-2bef-4b02-bf0a-91b2fe1f65c9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Clase 13 - Consultas y transacciones sobre BD/3. Pacientes/TestTabla.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Clase 13 - Consultas y transacciones sobre BD/3. Pacientes/out/production/tx/com/example/tx/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Clase 13 - Consultas y transacciones sobre BD/3. Pacientes/out/production/tx/com/example/tx/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Clase 13 - Consultas y transacciones sobre BD/3. Pacientes/out/production/tx/com/example/tx/TestTabla.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Clase 18 - Maven/1. repaso_maven/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Clase 18 - Maven/1. repaso_maven/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Clase 18 - Maven/1. repaso_maven/src/main/java/org/example/dao/IDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Clase 18 - Maven/1. repaso_maven/src/main/java/org/example/dao/impl/EstudianteDaoEnMemoria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Clase 18 - Maven/1. repaso_maven/src/main/java/org/example/dao/impl/EstudianteDaoH2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Clase 18 - Maven/1. repaso_maven/src/main/java/org/example/model/Estudiante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Clase 18 - Maven/1. repaso_maven/src/main/java/org/example/service/EstudianteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Clase 18 - Maven/1. repaso_maven/src/test/java/org/example/EstudianteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clase 13 - Consultas y transacciones sobre BD/1. LiveCoding/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase 13 - Consultas y transacciones sobre BD/1. LiveCoding/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clase 14 - Patron DAO/6. Integradora/out/production/6. Integradora/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase 14 - Patron DAO/6. Integradora/out/production/6. Integradora/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clase 14 - Patron DAO/6. Integradora/out/production/6. Integradora/daos/DomicilioDAOH2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase 14 - Patron DAO/6. Integradora/out/production/6. Integradora/daos/DomicilioDAOH2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clase 14 - Patron DAO/6. Integradora/out/production/6. Integradora/daos/PacienteDAOH2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase 14 - Patron DAO/6. Integradora/out/production/6. Integradora/daos/PacienteDAOH2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clase 14 - Patron DAO/6. Integradora/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase 14 - Patron DAO/6. Integradora/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clase 14 - Patron DAO/6. Integradora/src/daos/DomicilioDAOH2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase 14 - Patron DAO/6. Integradora/src/daos/DomicilioDAOH2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clase 14 - Patron DAO/6. Integradora/src/daos/PacienteDAOH2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase 14 - Patron DAO/6. Integradora/src/daos/PacienteDAOH2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clase 14 - Patron DAO/8. Resuelto .- clinica-dental 3/clinica-dental.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase 14 - Patron DAO/8. Resuelto .- clinica-dental 3/clinica-dental.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="26V17peoxmm13bOEEq3z7M3YRSz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f808093b-2bef-4b02-bf0a-91b2fe1f65c9" name="Changes" comment="" />
+      <created>1647493775349</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647493775349</updated>
+    </task>
+    <servers />
+  </component>
+</project>
