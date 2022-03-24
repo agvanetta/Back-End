@@ -1,7 +1,7 @@
-package main.com.dh.clinica.dao.impl;
+package com.example.integradora.dao.impl;
 
-import main.com.dh.clinica.dao.IDao;
-import main.com.dh.clinica.model.Domicilio;
+import com.example.integradora.dao.IDao;
+import com.example.integradora.domain.Domicilio;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -14,8 +14,6 @@ public class DomicilioDaoH2 implements IDao<Domicilio> {
     private final static String DB_URL = "jdbc:h2:~/db_clinica;INIT=RUNSCRIPT FROM 'create.sql'";
     private final static String DB_USER ="sa";
     private final static String DB_PASSWORD = "";
-
-
 
 
     @Override

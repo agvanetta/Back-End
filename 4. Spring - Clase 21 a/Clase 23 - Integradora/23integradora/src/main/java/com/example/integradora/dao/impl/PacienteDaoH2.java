@@ -1,15 +1,15 @@
-package main.com.dh.clinica.dao.impl;
+package com.example.integradora.dao.impl;
 
-import main.com.dh.clinica.dao.IDao;
-import main.com.dh.clinica.model.Domicilio;
-import main.com.dh.clinica.model.Paciente;
-import main.com.dh.clinica.util.Util;
+import com.example.integradora.dao.IDao;
+import com.example.integradora.domain.Domicilio;
+import com.example.integradora.domain.Paciente;
+import com.example.integradora.util.Util;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PacienteDaoH2 implements IDao<Paciente>  {
+public class PacienteDaoH2 implements IDao<Paciente> {
 
     private final static String DB_JDBC_DRIVER = "org.h2.Driver";
     //con la instruccion INIT=RUNSCRIPT cuando se conecta a la base ejecuta el script de sql que esta en dicho archivo

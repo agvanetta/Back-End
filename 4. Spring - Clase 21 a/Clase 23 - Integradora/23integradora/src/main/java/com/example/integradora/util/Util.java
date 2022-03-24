@@ -1,4 +1,4 @@
-package main.com.dh.clinica.util;
+package com.example.integradora.util;
 
 import java.sql.Timestamp;
 import java.util.Date;

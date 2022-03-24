@@ -1,7 +1,6 @@
-package main.com.dh.clinica.dao;
+package com.example.integradora.dao;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface IDao<T> {
 
