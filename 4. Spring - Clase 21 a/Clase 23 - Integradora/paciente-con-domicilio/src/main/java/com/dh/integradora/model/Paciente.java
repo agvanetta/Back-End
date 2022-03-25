@@ -1,7 +1,7 @@
 package com.dh.integradora.model;
 
-import java.sql.Date;
 import java.time.LocalDate;
+import java.util.Date;
 import java.util.Objects;
 
 public class Paciente {
@@ -11,16 +11,25 @@ public class Paciente {
     private String nombre;
     private String email;
     private String dni;
-    private LocalDate fechaIngreso;
+    private Date fechaIngreso;
     private Domicilio domicilio;
 
-    public Paciente(long id, String apellido, String nombre, String email, String dni, LocalDate fechaIngreso) {
+    public Domicilio getDomicilio() {
+        return domicilio;
+    }
+
+    public void setDomicilio(Domicilio domicilio) {
+        this.domicilio = domicilio;
+    }
+
+    public Paciente(long id, String apellido, String nombre, String email, String dni, Date fechaIngreso, Domicilio domicilio) {
         this.id = id;
         this.apellido = apellido;
         this.nombre = nombre;
         this.email = email;
         this.dni = dni;
         this.fechaIngreso = fechaIngreso;
+        this.domicilio = domicilio;
     }
 
     public long getId() {
@@ -63,11 +72,11 @@ public class Paciente {
         this.dni = dni;
     }
 
-    public LocalDate getFechaIngreso() {
+    public Date getFechaIngreso() {
         return fechaIngreso;
     }
 
-    public void setFechaIngreso(LocalDate fechaIngreso) {
+    public void setFechaIngreso(Date fechaIngreso) {
         this.fechaIngreso = fechaIngreso;
     }
 

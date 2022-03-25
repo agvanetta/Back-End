@@ -10,20 +10,6 @@ public class Domicilio {
     private String localidad;
     private String provincia;
 
-    public Domicilio() {}
-
-    public Domicilio(Integer domicilioID) {
-        this.domicilioID = domicilioID;
-    }
-
-    public Domicilio(String calle, Integer numero, String localidad, String provincia) {
-        this.domicilioID = null;
-        this.calle = calle;
-        this.numero = numero;
-        this.localidad = localidad;
-        this.provincia = provincia;
-    }
-
     public Domicilio(Integer domicilioID, String calle, Integer numero, String localidad, String provincia) {
         this.domicilioID = domicilioID;
         this.calle = calle;
@@ -83,6 +69,8 @@ public class Domicilio {
                Objects.equals(localidad, domicilio.localidad) &&
                Objects.equals(provincia, domicilio.provincia);
     }
+
+
 
     @Override
     public int hashCode() {
