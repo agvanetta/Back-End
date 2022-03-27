@@ -15,7 +15,7 @@ import static java.time.temporal.ChronoUnit.DAYS;
 import static java.time.temporal.ChronoUnit.YEARS;
 
 @RestController
-@org.springframework.stereotype.Controller
+//@RestControllerEquivalente a @Controller +@ResponseBodyLas anotaciones se utilizan juntas.
 public class Controller {
 
     @GetMapping("calendar/{fecha}") // "2020-01-15"
