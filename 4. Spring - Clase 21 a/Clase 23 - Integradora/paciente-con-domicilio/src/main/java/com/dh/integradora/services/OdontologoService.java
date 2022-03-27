@@ -29,4 +29,8 @@ public class OdontologoService {
         }
         return null;
     }
+
+    public Odontologo guardar(Odontologo odontologo){
+        return odontologo;
+    }
 }
