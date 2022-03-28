@@ -7,6 +7,7 @@ import java.util.List;
 
 public class OdontologoService {
 
+    public Object actualizar;
     private InterfaceDAO<Odontologo> odontologoInterfaceDAO;
 
     public InterfaceDAO<Odontologo> getOdontologoInterfaceDAO() {
