@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dbea985b-2acb-4d01-9539-81c7cfee50f1" name="Changes" comment="Consumiendo apis">
+      <change afterPath="$PROJECT_DIR$/../2.consumiendoDelBack/src/main/java/com/example2/consumiendoDelBack/service/MedicamentoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.consumiendoDelBack/src/main/java/com/example2/consumiendoDelBack/util/Jsons.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dependencias Jackson y Unirest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/peliculas/api/PeliculasApiApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/peliculas/api/controller/PeliculaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/peliculas/api/dto/PeliculaDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/peliculas/api/model/Pelicula.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/peliculas/api/repository/IRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/peliculas/api/repository/impl/PeliculaListRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/peliculas/api/service/PeliculaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/delete_pelicula.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/get_pelicula.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/post_pelicula.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/update_pelicula.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/peliculaAlta.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/peliculaList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dh/peliculas/api/PeliculasApiApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../peliculas-apiV2.zip" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML4 File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="peliculas-api/invalid/Spring" />
+      <facet id="peliculas-api/invalid/Web" />
+    </ignored-facets>
+  </component>
+  <component name="ProjectId" id="1w5SVOAqtAYOuhU2PM5k5o7fC2s" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML4 File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/js" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.PeliculasApiApplication">
+    <configuration name="PeliculasApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dh.peliculas.api.PeliculasApiApplication" />
+      <module name="peliculas-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dh.peliculas.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PeliculasApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="peliculas-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dh.peliculas.api.PeliculasApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PeliculasApiApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dbea985b-2acb-4d01-9539-81c7cfee50f1" name="Changes" comment="" />
+      <created>1627746981754</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627746981754</updated>
+      <workItem from="1627746983265" duration="10437000" />
+      <workItem from="1628042708388" duration="27000" />
+      <workItem from="1628118447520" duration="60000" />
+      <workItem from="1628128702625" duration="791000" />
+      <workItem from="1628169999424" duration="599000" />
+      <workItem from="1628207428735" duration="11177000" />
+      <workItem from="1628223912624" duration="600000" />
+      <workItem from="1628734060121" duration="3833000" />
+    </task>
+    <task id="LOCAL-00001" summary="Consumiendo apis">
+      <created>1648497175060</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648497175060</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Consumiendo apis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Consumiendo apis" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dh/peliculas/api/controller/PeliculaController.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dh/peliculas/api/repository/impl/PeliculaListRepository.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="peliculas" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
