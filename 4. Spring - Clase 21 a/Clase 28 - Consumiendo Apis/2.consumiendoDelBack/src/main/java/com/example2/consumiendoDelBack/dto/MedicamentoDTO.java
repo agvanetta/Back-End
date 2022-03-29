@@ -7,11 +7,18 @@ public class MedicamentoDTO {
     private Integer cantidad;
     private Double precio;
 
-
+    // Void constructor
     public MedicamentoDTO(){}
 
     public MedicamentoDTO(Integer id, String nombre, String laboratorio, Integer cantidad, Double precio) {
         this.id = id;
+        this.nombre = nombre;
+        this.laboratorio = laboratorio;
+        this.cantidad = cantidad;
+        this.precio = precio;
+    }
+
+    public MedicamentoDTO(String nombre, String laboratorio, Integer cantidad, Double precio) {
         this.nombre = nombre;
         this.laboratorio = laboratorio;
         this.cantidad = cantidad;
@@ -57,4 +64,6 @@ public class MedicamentoDTO {
     public void setPrecio(Double precio) {
         this.precio = precio;
     }
+
+
 }

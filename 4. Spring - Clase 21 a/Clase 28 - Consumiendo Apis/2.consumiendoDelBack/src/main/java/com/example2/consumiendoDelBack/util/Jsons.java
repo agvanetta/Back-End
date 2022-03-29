@@ -17,7 +17,7 @@ public class Jsons {
                 .registerModule(new Jdk8Module())
                 .registerModule(new JavaTimeModule());
     }
-
+    // Convierte JSON a Objeto
     public static String asJsonString(Object object){
         try{
             ObjectMapper objectMapper = getObjectMapper();
@@ -28,7 +28,7 @@ public class Jsons {
             throw new RuntimeException(e);
         }
     }
-
+    // Convierte Objeto a JSON
     public static <T> T objectFromString(Class<T> aClass, String value) throws JsonProcessingException{
         return getObjectMapper().readValue(value, aClass);
     }

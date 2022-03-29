@@ -1,4 +1,4 @@
-package com.example2.consumiendoDelBack.repository.impl;
+package com.example2.consumiendoDelBack.repository;
 
 import com.example2.consumiendoDelBack.dto.MedicamentoDTO;
 

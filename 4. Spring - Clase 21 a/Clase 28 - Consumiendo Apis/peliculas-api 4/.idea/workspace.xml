@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbea985b-2acb-4d01-9539-81c7cfee50f1" name="Changes" comment="Consumiendo apis">
-      <change afterPath="$PROJECT_DIR$/../2.consumiendoDelBack/src/main/java/com/example2/consumiendoDelBack/dto/MedicamentoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2.consumiendoDelBack/src/main/java/com/example2/consumiendoDelBack/repository/impl/IRepositoryRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2.consumiendoDelBack/src/main/java/com/example2/consumiendoDelBack/service/MedicamentoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2.consumiendoDelBack/src/main/java/com/example2/consumiendoDelBack/repository/impl/IRepositoryRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../2.consumiendoDelBack/src/main/java/com/example2/consumiendoDelBack/repository/IRepositoryRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2.consumiendoDelBack/src/main/java/com/example2/consumiendoDelBack/service/MedicamentoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../2.consumiendoDelBack/src/main/java/com/example2/consumiendoDelBack/service/MedicamentoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
