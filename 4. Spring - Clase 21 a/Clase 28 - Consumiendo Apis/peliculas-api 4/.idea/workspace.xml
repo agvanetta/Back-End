@@ -5,34 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbea985b-2acb-4d01-9539-81c7cfee50f1" name="Changes" comment="Consumiendo apis">
-      <change afterPath="$PROJECT_DIR$/../2.consumiendoDelBack/src/main/java/com/example2/consumiendoDelBack/service/MedicamentoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2.consumiendoDelBack/src/main/java/com/example2/consumiendoDelBack/util/Jsons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dependencias Jackson y Unirest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/peliculas/api/PeliculasApiApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/peliculas/api/controller/PeliculaController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/peliculas/api/dto/PeliculaDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/peliculas/api/model/Pelicula.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/peliculas/api/repository/IRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/peliculas/api/repository/impl/PeliculaListRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/peliculas/api/service/PeliculaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/delete_pelicula.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/get_pelicula.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/post_pelicula.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/update_pelicula.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/peliculaAlta.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/peliculaList.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dh/peliculas/api/PeliculasApiApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../peliculas-apiV2.zip" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.consumiendoDelBack/src/main/java/com/example2/consumiendoDelBack/dto/MedicamentoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.consumiendoDelBack/src/main/java/com/example2/consumiendoDelBack/repository/impl/IRepositoryRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2.consumiendoDelBack/src/main/java/com/example2/consumiendoDelBack/service/MedicamentoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
