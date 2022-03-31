@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProyectoIntegradorVanettaApplication {
+public class ClinicaOdontologicaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProyectoIntegradorVanettaApplication.class, args);
+		SpringApplication.run(ClinicaOdontologicaApplication.class, args);
 	}
 
 }
