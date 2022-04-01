@@ -64,6 +64,7 @@ public class PeliculaListRepository  implements IRepository<Pelicula> {
         List<Pelicula> peliculasCargadas = new ArrayList<>();
         peliculasCargadas.add(new Pelicula(1,"Star Wars" , "Ficcion",7));
         peliculasCargadas.add(new Pelicula(2,"It" , "Terror",0));
+        peliculasCargadas.add(new Pelicula(1,"Apollo","Random",10));
         return peliculasCargadas;
     }
 }

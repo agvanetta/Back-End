@@ -8,9 +8,9 @@ import java.util.List;
 
 class OdontologoServiceTest {
 
-    Odontologo od1 = new Odontologo(5L,17,"Gabriel","Hauche");
-    Odontologo od2 = new Odontologo(6l,22,"Diego","Milito");
-    Odontologo od3 = new Odontologo(7L,23,"Gustavo","Bou");
+    Odontologo od1 = new Odontologo(55L,17,"Gabriel","Hauche");
+    Odontologo od2 = new Odontologo(65l,22,"Diego","Milito");
+    Odontologo od3 = new Odontologo(75L,23,"Gustavo","Bou");
 
     private static OdontologoService odontologoService = new OdontologoService();
 

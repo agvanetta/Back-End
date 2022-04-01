@@ -1,0 +1,27 @@
+http://localhost:8080/h2-console
+
+application.properties:
+
+spring.h2.console.enabled=true
+spring.sql.init.plataform=h2
+spring.datasource.url=jdbc:h2:mem:navin
+
+<dependency>
+   <groupId>com.h2database</groupId>
+   <artifactId>h2</artifactId>
+   <scope>runtime</scope>
+</dependency>
+
+<dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+
+<dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+
+spring-boot-starter-data-jpa: esta incluye la API JPA, la implementación de JPA, JDBC y otras librerías. Como la implementación por defecto de JPA es Hibernate, esta dependencia también lo trae incluido.
+
+com.h2database: para hacer una prueba rápida, podemos agregar H2 (una base de datos en memoria muy liviana). En application.properties habilitamos la consola de la BD H2 para poder acceder a ella a través de una UI.
