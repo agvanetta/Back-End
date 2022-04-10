@@ -6,9 +6,9 @@ import java.util.Set;
 import javax.persistence.*;
 
 @Entity
-@Table(name="Estudiantes")
+@Table(name="Clientes")
 
-public class Estudiante {
+public class Cliente {
 
     @Id // Id por default ; requerido
     @GeneratedValue // Si no se lo pasamos, que se autogenere
@@ -16,16 +16,16 @@ public class Estudiante {
     private String nombre;
     private String apellido;
 
-    @OneToMany(mappedBy = "estudiante" ) // Como se llama la propiedad del a clase con la que se relaciona
+    @OneToMany(mappedBy = "cliente") // Como se llama la propiedad del a clase con la que se relaciona
     @JsonIgnore // ignora la propiedad
-    private Set<Cursada> cursadas; // Puede tener muchas cursadas, una coleccion
+    private Set<Reunion> reuniones; // Puede tener muchas cursadas, una coleccion
 
-    public Set<Cursada> getCursadas() {
-        return cursadas;
+    public Set<Reunion> getReuniones() {
+        return reuniones;
     }
 
-    public void setCursadas(Set<Cursada> cursadas) {
-        this.cursadas = cursadas;
+    public void setReuniones(Set<Reunion> cursadas) {
+        this.reuniones = reuniones;
     }
 
     public Long getId() {

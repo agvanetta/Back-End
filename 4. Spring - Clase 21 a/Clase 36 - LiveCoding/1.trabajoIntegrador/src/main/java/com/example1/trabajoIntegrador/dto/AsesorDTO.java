@@ -1,6 +1,6 @@
 package com.example1.trabajoIntegrador.dto;
 
-public class EstudianteDTO {
+public class AsesorDTO {
 
     private Long id;
     private String nombre;

@@ -1,9 +1,10 @@
 package com.example1.trabajoIntegrador.dto;
 
-public class MateriaDTO {
+public class ClienteDTO {
 
     private Long id;
     private String nombre;
+    private String apellido;
 
     public Long getId() {
         return id;
@@ -19,5 +20,13 @@ public class MateriaDTO {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 }

@@ -6,24 +6,25 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Table(name = "Materias")
-public class Materia {
+@Table(name = "Asesores")
+public class Asesor {
 
     @Id
     @GeneratedValue
     private Long id;
     private String nombre;
+    private String apellido;
 
-    @OneToMany(mappedBy = "materia")
+    @OneToMany(mappedBy = "asesor")
     @JsonIgnore // En relaciones OneToMany para evitar loop i.
-    private Set<Cursada> cursadas;
+    private Set<Reunion> reuniones;
 
-    public Set<Cursada> getCursadas() {
-        return cursadas;
+    public Set<Reunion> getReuniones() {
+        return reuniones;
     }
 
-    public void setCursadas(Set<Cursada> cursadas) {
-        this.cursadas = cursadas;
+    public void setReuniones(Set<Reunion> reuniones) {
+        this.reuniones = reuniones;
     }
 
     public Long getId() {
@@ -40,5 +41,13 @@ public class Materia {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 }
