@@ -11,7 +11,6 @@ import com.example1.trabajoIntegrador.service.IClienteService;
 import java.util.Collection;
 
 @CrossOrigin("*")
-
 @RestController
 @RequestMapping("/clientes")
 public class ClienteController {
