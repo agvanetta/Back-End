@@ -1,0 +1,7 @@
+cerrar puerto 8080
+
+netstat -ano | findstr :8080
+
+taskkill /F /PID **numero**
+
+Fuente: https://www.enmimaquinafunciona.com/pregunta/166401/Como-matar-un-localhost8080

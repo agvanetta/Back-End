@@ -1,0 +1,25 @@
+{
+    "cliente":{"id":1},
+    "asesor":{"id":5},
+    "fecha":"12 de abril a las 15hs"
+}
+
+
+lo muestra
+
+[
+    {
+        "id": 3,
+        "cliente": {
+            "id": 1,
+            "nombre": "Agustin",
+            "apellido": "Vanetta"
+        },
+        "asesor": {
+            "id": 2,
+            "nombre": "Peter",
+            "apellido": "Linch"
+        },
+        "fecha": "12 de abril a las 15hs"
+    }
+]

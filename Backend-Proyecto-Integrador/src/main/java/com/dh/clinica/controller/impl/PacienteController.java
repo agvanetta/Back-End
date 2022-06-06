@@ -1,0 +1,63 @@
+package com.dh.clinica.controller.impl;
+import com.dh.clinica.controller.CRUDController;
+import com.dh.clinica.dto.PacienteDto;
+import com.dh.clinica.service.impl.PacienteServiceImpl;
+import com.dh.clinica.exceptions.FindByIdException;
+import com.dh.clinica.exceptions.ServiceException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import java.util.List;
+
+@CrossOrigin("*")
+@RestController
+@RequestMapping("/pacientes")
+public class PacienteController implements CRUDController<PacienteDto> {
+
+    @Autowired
+    PacienteServiceImpl pacienteServiceImpl;
+
+    @CrossOrigin
+    @Override
+    @GetMapping("/todos")
+    public ResponseEntity<?> buscarTodos() {
+        List<PacienteDto> pacientes = pacienteServiceImpl.buscarTodos();
+        if (pacientes.size() == 0) {
+            return ResponseEntity.status(HttpStatus.NO_CONTENT).body("No se encontraron pacientes");
+        }
+        return ResponseEntity.status(HttpStatus.OK).body(pacientes);
+    }
+
+    @CrossOrigin
+    @Override
+    @PostMapping("/nuevo")
+    public ResponseEntity<?> crear(@RequestBody PacienteDto paciente) throws ServiceException {
+        PacienteDto pacienteNuevo = pacienteServiceImpl.registrar(paciente);
+        if (pacienteNuevo == null) {
+            throw new ServiceException("No se pudo registrar el paciente", "registrar paciente");
+        }
+        return ResponseEntity.status(HttpStatus.OK).body(pacienteNuevo);
+    }
+
+    @CrossOrigin
+    @Override
+    @GetMapping("/{id}")
+    public ResponseEntity<?> buscar(@PathVariable Integer id) throws FindByIdException {
+        return ResponseEntity.status(HttpStatus.OK).body(pacienteServiceImpl.buscar(id));
+    }
+
+    @CrossOrigin
+    @Override
+    @PutMapping()
+    public ResponseEntity<?> actualizar(@RequestBody PacienteDto paciente) throws FindByIdException {
+        return ResponseEntity.ok(pacienteServiceImpl.actualizar(paciente));
+    }
+
+    @CrossOrigin
+    @Override
+    @DeleteMapping("/{id}")
+    public ResponseEntity<String> eliminar(@PathVariable Integer id) throws FindByIdException {
+        return ResponseEntity.status(HttpStatus.OK).body(pacienteServiceImpl.eliminar(id));
+    }
+}
